@@ -1,3 +1,306 @@
-/* Your styles go here */
-@import "bootstrap/scss/bootstrap.scss";
-@import "bootstrap-icons/font/bootstrap-icons.css";
+// My Colors
+$salmon: #FF968F;
+$salmonlight: #FFBDB9;
+$salmonlighter: #FFE3E1;
+
+$pastelblue: #8DC8E7;
+$pastelbluelight: #CAEAFB;
+$pastelbluelighter: #EBF8FF;
+$pastelbluedark: #5B96B5;
+$pastelblueblue: #36A4DE;
+
+$darkblue: #283B69;
+$darkblue1: #5A6E9E;
+$darkblue2: #9AAEDD;
+$darkblue3: #BCD0FF;
+
+
+
+// Font
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .chakra {
+    font-family: 'Chakra Petch', serif;
+}
+
+
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Default Bootstrap variable overrides
+
+$navbar-brand-font-size: 1.5rem;
+$navbar-light-brand-color: black;
+$navbar-nav-link-padding-x: 1rem;
+$navbar-light-color: black;
+$navbar-light-hover-color: black;
+$navbar-light-active-color: black;
+$navbar-light-toggler-border-color: rgba(black, 0);
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#FFFFFF' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-toggler-padding-x: .35rem;
+$navbar-toggler-font-size: 2rem;
+
+
+
+
+// Required
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+
+// Optional Bootstrap components here
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+// My Other Styles
+
+// NAVIGATION
+nav {
+    background: linear-gradient(to right, $darkblue3, $darkblue);
+    margin: 0 .5rem 0 .5rem;
+    clip-path: polygon(4% 0%, 96% 0%, 100% 15%, 100% 85%, 96% 100%, 4% 100%, 0% 85%, 0% 15%);
+    .nav-link {
+        font-size: 1.5rem;
+        font-family: 'Chakra Petch', serif;
+        font-weight: bold;
+        padding: 1rem;
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            text-decoration-thickness: 3px;
+        }
+    }
+}
+
+
+
+
+// HOME
+#homeLanding {
+    background-image: url(/images/header_bg.jpg);
+    background-attachment: fixed;
+    background-position: 20% 0%;
+    height: 100vh;
+    padding-top: .5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+#heroSection {
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+    h1 {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        background-color: $salmon;
+        padding: .8rem 1.3rem;
+        clip-path: polygon(5% 0%, 95% 0%, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0% 85%, 0% 15%);
+        font-weight: bold;
+        font-size: 1.3rem;
+        &:hover {
+            background-color: $salmonlight;
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            text-decoration-thickness: 3px;
+        }
+    }
+    img {
+        width: 65%;
+        border-radius: 10px;
+    }
+}
+
+#heroEmphasis {
+    color: $salmon;
+}
+
+#heroButton {
+    margin: 1.7rem 0 1.5rem 0;
+}
+
+
+
+
+
+
+
+
+
+// BREAKPOINTS
+
+@media only screen and (min-width: 440px) {
+    nav {
+        clip-path: polygon(3% 0%, 97% 0%, 100% 15%, 100% 85%, 97% 100%, 3% 100%, 0% 85%, 0% 15%);
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    nav {
+        clip-path: polygon(2% 0%, 98% 0%, 100% 15%, 100% 85%, 98% 100%, 2% 100%, 0% 85%, 0% 15%);
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    nav {
+        clip-path: polygon(1% 0%, 99% 0%, 100% 15%, 100% 85%, 99% 100%, 1% 100%, 0% 85%, 0% 15%);
+        .nav-link {
+            padding: 0.5rem 1rem;
+        }
+    }
+    
+
+    #contactButton {
+        background-color: $salmonlight;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        &:hover {
+            background-color: $salmon;
+        }
+    }
+
+    #contactButtonParent {
+        margin-left: auto;
+        clip-path: polygon(5% 0%, 95% 0%, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0% 85%, 0% 15%);
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #svg {
+//     width: 100px;
+// }
+
+// img {
+//     width: 300px;
+// }
+
+// #test {
+//     background-color: lightcoral;
+//     width: 700px;
+//     height: 100px;
+//     position: absolute;
+//     top: 2px;
+//     left: 2px;
+//     // clip path - x, y, etc.
+//     clip-path: polygon(2% 0%, 98% 0%, 100% 20%, 100% 80%, 98% 100%, 2% 100%, 0% 80%, 0% 20%);
+// }
+
+// #test2 {
+//     background-color: black;
+//     width: 704px;
+//     height: 104px;
+//     // clip path - x, y, etc.
+//     clip-path: polygon(2% 0%, 98% 0%, 100% 20%, 100% 80%, 98% 100%, 2% 100%, 0% 80%, 0% 20%);
+// }
+
+// #testover {
+//     width: 700px;
+//     height: 100px;
+//     position: absolute;
+//     top: 2px;
+//     left: 2px;
+//     // clip path - x, y, etc.
+//     clip-path: polygon(2% 0%, 98% 0%, 100% 20%, 100% 80%, 98% 100%, 2% 100%, 0% 80%, 0% 20%);
+//     &:hover {
+//         background-color: rgba($color: white, $alpha: .5);
+//     }
+//     a {
+//         background-color: blue;
+//         color: white;
+//         padding: 10px;
+//         text-align: center;
+//         display: none;
+//     }
+// }
+
+// .smaller {
+//     background-color: red;
+//     width: 200px;
+//     height: 200px;
+//     clip-path: polygon(2% 0%, 98% 0%, 100% 20%, 100% 80%, 98% 100%, 2% 100%, 0% 80%, 0% 20%);
+// }
+
+// #Layer_1 {
+//     height: 100px;
+//     width: 50%;
+// }
+
+// #overlay {
+//     position: absolute;
+//     width: 259px;
+//     height: 141px;
+//     top: 20px;
+//     left: 20px;
+//     opacity: 0;
+//     color: black;
+//     text-decoration: none;
+//     &:hover {
+//        background-color: rgba($color: white, $alpha: .9);
+//        cursor: pointer;
+//        opacity: 1;
+//     }
+//     p {
+//         padding: 16px;
+//         font-size: 16px;
+//         text-align: center;
+//     }
+// }
+
+// #contain, #testcontain {
+//     position: relative;
+// }
