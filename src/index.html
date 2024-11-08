@@ -3,26 +3,259 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Portfolio website</title>
+  <title>Avrey Semadeni</title>
+  <link rel="icon" type="image/x-icon" href="images/logo_32.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
-  <meta name="description" content="TODO: Portfolio website ...">
+  <meta name="description" content="Avrey Semadeni Portfolio">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./stylesheets/main.scss">
 </head>
 
 <body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Portfolio Website
-  </h1>
+  <header id="homeLanding">
+    <nav class="navbar navbar-light navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-2" href="#">
+          <!-- <img src="images/logo_white.png" alt="Avrey Semadeni Logo" width="60" height="60" class="d-inline-block d-lg-none align-text-center"> -->
+          <img src="images/as_logo_dark.svg" alt="Avrey Semadeni Logo" width="60" height="60" class="d-inline-block align-text-center">
+          <span class="chakra d-none d-sm-inline d-lg-none fw-bold">Avrey Semadeni</span>
+        </a>
 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#asNavbar" aria-controls="asNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ms-2 ms-lg-0" id="asNavbar">
+          <ul class="navbar-nav mb-2 mb-lg-0 w-100 text-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item me-lg-4" id="contactButtonParent">
+              <a class="nav-link" id="contactButton" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="heroSection" class="container">
+      <h1>Hello</h1>
+        <!-- Hello opens up first with other paragraph shortly after. Hello different font happy -->
+      <p class="chakra">My name is Avrey Semadeni and I design <b id="heroEmphasis">professional websites</b> that align with your goals.</p>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img src="images/avrey.jpg" alt="Avrey Semadeni the Web Designer">
+        </div>
+        <div class="col-12 col-md-6" id="heroButton">
+          <a href="projects.html" class="chakra">See My Work</a>
+        </div>
+        
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="mySkills">
+      <h1>My Skills</h1>
+      <ul>
+        <li>HTML 85%</li>
+        <li>CSS 70%</li>
+        <li>Javascript 10%</li>
+        <li>Photoshop 80%</li>
+        <li>Illustrator 20%</li>
+        <li>User Experience 20%</li>
+      </ul>
+      <div>
+        <p>HTML</p>
+      </div>
+      <div>
+        <p>CSS</p>
+      </div>
+      <div>
+        <p>JavaScript</p>
+      </div>
+      <div>
+        <p>UX Design</p>
+      </div>
+      <div>
+        <p>Photoshop</p>
+      </div>
+      <div>
+        <p>Illustrator</p>
+      </div>
+    </section>
+
+    <section id="featuredProjects">
+      <h1>Featured Projects</h1>
+      <div>
+        <img src="images/cardeal_mockup.pn" alt="Mockup of Cardeal website">
+        <h2>Cardeal</h2>
+      </div>
+      <div>
+        <img src="images/webby_mockup.pn" alt="Mockup of Webby website">
+        <h2>Webby</h2>
+      </div>
+    </section>
+
+    <section id="myProcess">
+      <h1>My Process</h1>
+      <div>
+        <h2>Vision</h2>
+        <p>You tell me what goals and visions you have for your website. What is your biggest need? What styles do you like?</p>
+      </div>
+      <div>
+        <h2>Research</h2>
+        <p>I will analyze your competitors' websites to improve your website's experience.</p>
+      </div>
+      <div>
+        <h2>Design</h2>
+        <p>I design a couple different website looks, and you choose which one you like.</p>
+      </div>
+      <div>
+        <h2>Code</h2>
+        <p>I will code your chosen design so we can get your website up and running!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <img src="images/as_logo_salmon.sv" alt="Avrey Semadeni Logo">
+      <p class="chakra">Avrey Semadeni</p>
+    </div>
+    <div>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-instagram"></i>
+    </div>
+    <div>
+      <p>Computer mockup image <a href="http://www.freepik.com" target="_blank">Designed by starline / Freepik</a> with modifications by me</p>
+    </div>
+    <div>
+      <p>&copy; Avrey Semadeni 2024</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+    <p style="font-size: 100px;">don't forget to resize images for the web</p>
+<!-- <div id="testcontain">
+<div id="test2"></div>
+<div id="test"><p>this is some text</p></div>
+<div id="testover"><a>button</a></div>
+</div>
+<div class="smaller"><p>hellow</p></div>
+<img src="images/as-logo.svg" alt="" id="svg">
+
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 500 500" preserveAspectRatio="none">
+  <defs>
+    <style>
+      .st0 {
+        fill: #ed1c24;
+      }
+    </style>
+  </defs>
+  <polygon class="st0" points="415.84 238.89 385.17 270.64 99.24 269.85 68.43 239.03 68.43 131.9 99.35 100.98 385.17 100.84 415.84 131.76 415.84 238.89"/>
+</svg>
+
+<div id="contain">
+<img src="images/webby-mockup.png" alt="" id="mockup">
+<a id="overlay" href="https://cardeal-avrey.netlify.app/"><p><b>Webby</b><br><br>Click for full description</p></a>
+</div> -->
+
+
+
+<!-- Gallery -->
+  <h2>Projects</h2>
+  <p>Title/caption 
+    • Project details: info about the client and the business, date/time to complete 
+    • Purpose, goals, and scope of the project  
+    • Expectations and required elements established by client/supervisor or instructor if class assignment 
+    • Your role in project (and credits for other contributors) 
+    • Coding knowledge/skills beyond the basics that had to be applied to build the web project 
+    • Design decisions made in creating the piece:  color, typography, layouts, images, etc 
+    • Strongest features of the web project, things that you are most proud of 
+    • Problems/struggles that you experienced, focus on solutions to these problems</p>
+    <img src="images/work/cardeal.pn" alt="CarDeal's home page">
+    <h3>CarDeal</h3>
+    <p>My Role: Designer and developer</p>
+    <p>Time to complete: 2 weeks</p>
+    <p>Sources: Smashicons from Flaticon - Icon design</p>
+    <p>Project Description: CarDeal is a made-up company that offers to buy your car for cash, with the option to do a trade-in to purchase a vehicle CarDeal owns. One of the main goals was to design a website that is more customized and stands out from other competitor websites, while still providing customers with the information they need.<br>I was given specific instructions for what content to include in each section, but I chose the colors, fonts, and layout to implement. I also designed a favicon for the website so it has more presence in browser tabs. The site is a one-page website that is responsive and displays pleasing looks on desktop, tablet, and mobile phone screens.<br>I believe one of the strongest features of this web project is the header/hero section. It is extremely important to have the first thing users see be visually pleasing and quickly summarize what the website is about, and the design I have creates a good first impression while making it clear that this website buys cars.</p>
+    <h2>Case Study Info</h2>
+    <p>colors</p>
+    <p>fonts</p>
+    <img src="images/case-study/cardeal-palette.pn" alt="" style="width: 100vw;">
+
+    <img src="images/work/webby.png" alt="Webby's home page">
+    <h3>Webby</h3>
+    <p>My Role: Customizer</p>
+    <p>Time to complete: 2 weeks</p>
+    <p>Project Description: Webby is a pretend website for a web designer. The main goal of this project was to take a website template and customize it to make it more my own by using SASS to customize Bootstrap's default styles.<br>The one-page starter project was created from a YouTube tutorial, then I chose custom colors, images, graphics, icons, designed a logo, added real text, and added a couple new sections to the website to make it more complete. The site is responsive, and displays correctly on all screen widths, from mobile to desktop.<br>One of the struggles I experienced with this project was overriding the default styles created by Bootstrap. After some manipulating of code and experimenting, I was able to overcome this and create a system that allowed me to easily customize the website.</p>
+
+    <img src="images/work/2620.pn" alt="A personal webpage's home page">
+    <h3>About Me Website</h3>
+    <p>My Role: Designer and Developer</p>
+    <p>Time to complete: 1 month</p>
+    <p>Project Description: This informational website is part of a project proposed by one of my college instructors. The main purpose of this website is to combine the skills I learned in my Web 2620 class and gain more experience with coding websites.<br>Part of this project was to create a mockup using Figma before coding the website. I designed this website from scratch, with only the guidelines my professor gave us, such as to have 5-6 pages and use Bootstrap to help code the website.<br>One frustration that I had while working on this project was not knowing how to change the Bootstrap code to look less like Bootstrap. Although I did not yet understand the full possibilites of customization, I managed to change the primary color that affected my interactive elements.</p>
+
+    <img src="images/work/runforlife.pn" alt="Home page of a website for runners">
+    <h3>RunForLife</h3>
+    <p>My Role: Designer and Developer</p>
+    <p>Time to complete: 2 weeks</p>
+    <p>Project Description: RunForLife is a website that provides runners all over the world with a social hub to improve everyone's running experiences. The main functionalities are finding places to run, buy shoes, check their BMI, and read and post stories and tips about running.<br>The guidelines for this project were to include 5 main pages and incorporate some Javascript into the website, which I fulfilled by creating the BMI calculator to take user inputs and output the calculation result. For the destinations page, I went out and took my own photos of places to go running, as well as edited them in Photoshop.<br>A struggle I had was creating a popup screen for the destinations with more info about them. However, using Javascript, I was able to create the desired popup that could be closed out with an X button.</p>
+    
+    <img src="images/work/electrol.pn" alt="Electrol's home page">
+    <h3>Electrol</h3>
+    <p>Role: Designer and Developer</p>
+    <p>Time to complete: ?</p>
+    <p>Project Description: Electrol is a fictitious company that I imagined for my final website project in Web 1400. Electrol is an electric vehicle company that sells electric cars, bikes, and even boats. My goal for the website was to create something non-traditional that stands out from other websites.<br>The professor had some requirements such as creating a fake company to design a website for, along with having 5 pages on the website. I created the company's logo and all the content in the webpage, as well as a mockup of my design for the website.<br>One of the first things you notice about this website is that the navigation is on the left side of the screen, instead of the usual top. The goal is to create a different look in the website that will cause people to do a double-take, and hopefully stay on the page longer. It also allows the users to access any part of the navigation at any time, with a different style than just having the navbar fixed at the top.</p>
+    
+    <img src="images/work/cars_night.jp" alt="Light streaks created by cars driving by at night">
+    <h3>Complex Night Photo</h3>
+    <p>Role: Photographer and Editor</p>
+    <p>Time to complete: 2 days</p>
+    <p>Project Description: I took this photo for an assignment in my photography class. The goal was to photograph a pleasing photo while involving some creative light elements.<br>We were required to take the photo at night, and experiment with longer shutter speeds to capture more light in the darker environment. This photo was the result of seeking out a location with moving lights to create the streaking light effect in the darkness.<br>Something that works well in this photo is not just the streaks of light, but that there are different colors of streaks to give variety to the photo. When strategically placed on a website, it helps catch the user's eye and guides them to the next thing they should look at.</p>
+
+
+<!-- About Me -->
+  <h2>About Me</h2>
+  <p>Add skills and process once designed</p>
+  <img src="images/avrey1.jp" alt="Portrait of Avrey">
+  <p>I am a student studying Full Stack Web Development at Weber State University. However, I wasn't always interested in web design. As I took steps to enter college, I changed my major a couple times but wasn't happy with it. I remembered taking a Web Development class in high school that I found enjoyable, as I was able to manipulate a website's elements through code and use my keen attention to detail to spot any syntax errors. I also liked the variety of possibilites for elements that could form a website. I promptly changed my major to Web Development and have been enjoying using both my creative and logical sides to create wonderful websites!</p>
+  <p>make this next section visual</p>
+  <p>I love to design websites, but I also have other hobbies and interests:</p>
+  <a href="">Link to download PDF resume</a>
+  <!-- <p>visually pleasing resume below</p> -->
+
+<!-- Contact -->
+  <h2>Contact</h2>
+
+
+
+<!-- Resources -->
+  <!-- https://www.svgrepo.com/svg/279828/kitchen-pack-cook -->
+   <!-- https://www.svgrepo.com/svg/269300/spool-of-thread-sew -->
+    <!-- https://www.svgrepo.com/svg/277595/run -->
+     <!-- https://www.svgrepo.com/svg/484976/camping-tent -->
+      <!-- https://www.svgrepo.com/svg/167729/game-controller -->
+
+      <!-- https://www.svgrepo.com/svg/277445/envelope-mail -->
+       <!-- https://www.svgrepo.com/svg/227996/email-mail -->
   <script type="module" src="./javascripts/main.js"></script>
 </body>
 </html>
