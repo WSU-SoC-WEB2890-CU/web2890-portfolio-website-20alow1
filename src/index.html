@@ -53,7 +53,7 @@
         <div class="col">
           <p id="hello" class="chakra">Hello</p>
             <!-- Hello opens up first with other paragraph shortly after. Hello different font happy -->
-          <p class="p-2">My name is Avrey Semadeni and I design <b id="heroEmphasis">professional websites</b> that align with your goals.</p>
+          <p class="p-2 introduction">My name is Avrey Semadeni and I design <b id="heroEmphasis">professional websites</b> that align with your goals.</p>
           <div class="row justify-content-center align-items-center">
             <div class="col-12 col-md-6 col-lg-4 order-md-1">
               <img src="images/avrey.jpg" alt="Avrey Semadeni the Web Designer">
@@ -73,14 +73,6 @@
         <div class="col-12 col-lg-4 order-lg-1 text-center">
           <h1 id="skillsSect">My Skills</h1>
         </div>
-        <!-- <ul>
-          <li>HTML 85%</li>
-          <li>CSS 70%</li>
-          <li>Javascript 10%</li>
-          <li>Photoshop 80%</li>
-          <li>Illustrator 20%</li>
-          <li>User Experience 20%</li>
-        </ul> -->
         <div class="col-12 col-lg-8 p-0" id="skillsGraph">
           <div class="skillsBar" id="html">
             <p>HTML</p>
@@ -120,23 +112,31 @@
       </div>
     </section>
 
-    <section id="myProcess">
-      <h1>My Process</h1>
-      <div>
-        <h2>Vision</h2>
-        <p>You tell me what goals and visions you have for your website. What is your biggest need? What styles do you like?</p>
-      </div>
-      <div>
-        <h2>Research</h2>
-        <p>I will analyze your competitors' websites to improve your website's experience.</p>
-      </div>
-      <div>
-        <h2>Design</h2>
-        <p>I design a couple different website looks, and you choose which one you like.</p>
-      </div>
-      <div>
-        <h2>Code</h2>
-        <p>I will code your chosen design so we can get your website up and running!</p>
+    <section id="myProcess" aria-labelledby="processSect">
+      <div class="container">
+        <h1 id="processSect" class="text-center">My Process</h1>
+        <div class="row justify-content-evenly">
+          <div class="processBox processXLBox col-12 col-md-5 col-xl-2">
+            <h2>Vision</h2>
+            <p>You tell me what goals and visions you have for your website. What are your biggest needs? What mood should the website give?</p>
+            <div class="processShadow"><span class="chakra">01</span></div>
+          </div>
+          <div class="processBox col-12 col-md-5 col-xl-3">
+            <h2>Research</h2>
+            <p>I will analyze your competitors' websites to improve your website's experience.</p>
+            <div class="processShadow"><span class="chakra">02</span></div>
+          </div>
+          <div class="processBox col-12 col-md-5 col-xl-3">
+            <h2>Design</h2>
+            <p>I will design a couple different website looks, and you choose which one you like.</p>
+            <div class="processShadow col-12 col-md-6 col-lg-3"><span class="chakra">03</span></div>
+          </div>
+          <div class="processBox processXLBox col-12 col-md-5 col-xl-2">
+            <h2>Code</h2>
+            <p>I will code your chosen design so we can get your website up and running!</p>
+            <div class="processShadow"><span class="chakra">04</span></div>
+          </div>
+        </div>
       </div>
     </section>
   </main>

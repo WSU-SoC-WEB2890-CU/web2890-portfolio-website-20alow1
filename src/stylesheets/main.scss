@@ -70,6 +70,11 @@ h2 {
     font-family: 'Chakra Petch', serif;
 }
 
+.container {
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+}
+
 
 // NAVIGATION
 nav {
@@ -112,8 +117,9 @@ nav {
         font-size: 3.5rem;
         font-weight: bold;
     }
-    p {
+    .introduction {
         font-size: 1.6rem;
+        margin-bottom: 2rem;
     }
     a {
         text-decoration: none;
@@ -204,6 +210,8 @@ nav {
 
 
 
+
+
 //FEATURED PROJECTS
 #featuredProjects {
     padding-top: 6rem;
@@ -217,6 +225,71 @@ nav {
         width: 100%;
     }
 }
+
+
+
+
+
+// MY PROCESS
+#myProcess {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-top: -1px;
+    background: linear-gradient($darkblue2, $darkblue1);
+    h1 {
+        margin-bottom: 3rem;
+    }
+    .row {
+        padding-left: 2rem;
+        padding-right: 1.7rem;
+    }
+}
+
+.processBox {
+    padding: 1.5rem;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 5rem;
+    h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+//This is to prevent processBox from clipping processShadow, its child element
+.processBox::before {
+    content: "";
+    position: absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 7%, 100% 93%, 95% 100%, 5% 100%, 0% 93%, 0% 7%);
+    background-color: $pastelbluelighter;
+}
+
+.processShadow {
+    background-color: $darkblue;
+    color: $salmonlight;
+    position: absolute;
+    top: 2.7rem;
+    left: -.7rem;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 7%, 100% 93%, 95% 100%, 5% 100%, 0% 93%, 0% 7%);
+    span {
+        position: absolute;
+        bottom: .00000001rem;
+        right: 1.5rem;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+
+
+
 
 
 
@@ -236,6 +309,14 @@ nav {
             width: 50%;
         }
     }
+
+    .processBox::before {
+        clip-path: polygon(3% 0%, 97% 0%, 100% 7%, 100% 93%, 97% 100%, 3% 100%, 0% 93%, 0% 7%);
+    }
+    
+    .processShadow {
+        clip-path: polygon(3% 0%, 97% 0%, 100% 7%, 100% 93%, 97% 100%, 3% 100%, 0% 93%, 0% 7%);
+    }    
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -263,6 +344,13 @@ nav {
     }
     h2 {
         font-size: 3rem;
+    }
+    .processBox::before {
+        clip-path: polygon(5% 0%, 95% 0%, 100% 7%, 100% 93%, 95% 100%, 5% 100%, 0% 93%, 0% 7%);
+    }
+    
+    .processShadow {
+        clip-path: polygon(5% 0%, 95% 0%, 100% 7%, 100% 93%, 95% 100%, 5% 100%, 0% 93%, 0% 7%);
     }
 }
 
@@ -307,7 +395,23 @@ nav {
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+    .processBox::before {
+        clip-path: polygon(7% 0%, 93% 0%, 100% 7%, 100% 93%, 93% 100%, 7% 100%, 0% 93%, 0% 7%);
+    }
     
+    .processShadow {
+        clip-path: polygon(7% 0%, 93% 0%, 100% 7%, 100% 93%, 93% 100%, 7% 100%, 0% 93%, 0% 7%);
+    }
+
+    .processXLBox::before {
+        clip-path: polygon(10% 0%, 90% 0%, 100% 7%, 100% 93%, 90% 100%, 10% 100%, 0% 93%, 0% 7%);
+    }
+
+    .processXLBox {
+        .processShadow {
+            clip-path: polygon(10% 0%, 90% 0%, 100% 7%, 100% 93%, 90% 100%, 10% 100%, 0% 93%, 0% 7%);
+        }
+    }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
