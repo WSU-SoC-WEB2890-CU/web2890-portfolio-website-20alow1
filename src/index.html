@@ -48,62 +48,75 @@
       </div>
     </nav>
 
-    <div id="heroSection" class="container">
-      <h1>Hello</h1>
-        <!-- Hello opens up first with other paragraph shortly after. Hello different font happy -->
-      <p class="chakra">My name is Avrey Semadeni and I design <b id="heroEmphasis">professional websites</b> that align with your goals.</p>
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <img src="images/avrey.jpg" alt="Avrey Semadeni the Web Designer">
+    <section id="heroSection" class="container">
+      <div class="row align-items-center h-100">
+        <div class="col">
+          <p id="hello" class="chakra">Hello</p>
+            <!-- Hello opens up first with other paragraph shortly after. Hello different font happy -->
+          <p class="p-2">My name is Avrey Semadeni and I design <b id="heroEmphasis">professional websites</b> that align with your goals.</p>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-6 col-lg-4 order-md-1">
+              <img src="images/avrey.jpg" alt="Avrey Semadeni the Web Designer">
+            </div>
+            <div class="col-12 col-md-5 col-lg-4" id="heroButton">
+              <a href="projects.html" class="chakra">See My Work</a>
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-md-6" id="heroButton">
-          <a href="projects.html" class="chakra">See My Work</a>
-        </div>
-        
       </div>
-    </div>
+    </section>
   </header>
 
   <main>
-    <section id="mySkills">
-      <h1>My Skills</h1>
-      <ul>
-        <li>HTML 85%</li>
-        <li>CSS 70%</li>
-        <li>Javascript 10%</li>
-        <li>Photoshop 80%</li>
-        <li>Illustrator 20%</li>
-        <li>User Experience 20%</li>
-      </ul>
-      <div>
-        <p>HTML</p>
-      </div>
-      <div>
-        <p>CSS</p>
-      </div>
-      <div>
-        <p>JavaScript</p>
-      </div>
-      <div>
-        <p>UX Design</p>
-      </div>
-      <div>
-        <p>Photoshop</p>
-      </div>
-      <div>
-        <p>Illustrator</p>
+    <section id="mySkills" class="container-fluid" aria-labelledby="skillsSect">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-4 order-lg-1 text-center">
+          <h1 id="skillsSect">My Skills</h1>
+        </div>
+        <!-- <ul>
+          <li>HTML 85%</li>
+          <li>CSS 70%</li>
+          <li>Javascript 10%</li>
+          <li>Photoshop 80%</li>
+          <li>Illustrator 20%</li>
+          <li>User Experience 20%</li>
+        </ul> -->
+        <div class="col-12 col-lg-8 p-0" id="skillsGraph">
+          <div class="skillsBar" id="html">
+            <p>HTML</p>
+          </div>
+          <div class="skillsBar" id="css">
+            <p>CSS</p>
+          </div>
+          <div class="skillsBar" id="javascript">
+            <p>JavaScript</p>
+          </div>
+          <div class="skillsBar" id="uxdesign">
+            <p>UX Design</p>
+          </div>
+          <div class="skillsBar" id="photoshop">
+            <p>Photoshop</p>
+          </div>
+          <div class="skillsBar" id="illustrator">
+            <p>Illustrator</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="featuredProjects">
-      <h1>Featured Projects</h1>
-      <div>
-        <img src="images/cardeal_mockup.pn" alt="Mockup of Cardeal website">
-        <h2>Cardeal</h2>
-      </div>
-      <div>
-        <img src="images/webby_mockup.pn" alt="Mockup of Webby website">
-        <h2>Webby</h2>
+    <section id="featuredProjects" aria-labelledby="featuredSect">
+      <div class="container">
+        <h1 id="featuredSect" class="text-center">Featured Projects</h1>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 mb-5 mb-md-0 text-center">
+            <img src="images/cardeal_mockup.png" alt="Mockup of Cardeal website">
+            <h2>Cardeal</h2>
+          </div>
+          <div class="col-12 col-md-6 text-center">
+            <img src="images/webby_mockup.png" alt="Mockup of Webby website">
+            <h2>Webby</h2>
+          </div>
+        </div>
       </div>
     </section>
 
