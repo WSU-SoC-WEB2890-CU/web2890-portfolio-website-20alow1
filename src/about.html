@@ -14,49 +14,111 @@
     <link rel="stylesheet" href="./stylesheets/main.scss">
     </head>
 <body>
-    <header>
-        <h1>About Me</h1>
-    </header>
+    <nav class="navbar navbar-light navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-2" href="#">
+            <img src="images/as_logo_dark.svg" alt="Avrey Semadeni Logo" width="60" height="60" class="d-inline-block align-text-center">
+            <span class="chakra d-none d-sm-inline d-lg-none fw-bold">Avrey Semadeni</span>
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#asNavbar" aria-controls="asNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse ms-2 ms-lg-0" id="asNavbar">
+            <ul class="navbar-nav mb-2 mb-lg-0 w-100 text-center">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item me-lg-4" id="contactButtonParent">
+                <a class="nav-link" id="contactButton" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
 
+
+    <!-- Should I add my skills and process here instead of homepage? Or should I add them to both? -->
     <main>
-        <section id="aboutMe">
-            <img src="images/avrey2.jpg" alt="Avrey Semadeni photo">
-            <div>
-                <p>I am a student studying Full Stack Web Development at Weber State University. However, I wasn't always interested in web design. As I took steps to enter college, I changed my major a couple times but wasn't happy with it.</p>
-                <p>I remembered taking a Web Development class in high school that I found enjoyable, as I was able to manipulate a website's elements through code and use my keen attention to detail to spot any syntax errors. I also liked the variety of possibilites for elements that could form a website.</p>
-                <p>I promptly changed my major to Web Development and have been enjoying using both my creative and logical sides to create wonderful websites!</p>
+        <section id="aboutMe" aria-labelledby="aboutTitle">
+            <div class="container">
+                <h1 id="aboutTitle">About Me</h1>
+
+                <div id="aboutParagraph">
+                    <img src="images/avrey2_hex.png" alt="Avrey Semadeni, a female website developer with straight brown hair" id="avrey">
+
+                    <p class="md-short-p">I am a student studying Full Stack Web Development at Weber State University. However, I wasn't always interested in web design. As I took steps to enter college, I changed my major a couple times but wasn't happy with it.</p>
+                    <p>I remembered taking a Web Development class in high school that I found enjoyable, as I was able to manipulate a website's elements through code and use my keen attention to detail to spot any syntax errors. I also liked the variety of possibilites for elements that could form a website.</p>
+                    <p>I promptly changed my major to Web Development and have been enjoying using both my creative and logical sides to create wonderful websites!</p>
+                </div>
             </div>
         </section>
 
-        <section id="hobbies">
-            <h2>I love to design websites, but I also have other interests:</h2>
-            <div>
-                <img src="images/hobbies/run.svg" alt="Running shoe">
-                <h3>Running</h3>
-            </div>
-            <div>
-                <img src="images/hobbies/camping.svg" alt="Camping tent">
-                <h3>Camping</h3>
-            </div>
-            <div>
-                <img src="images/hobbies/sewing.svg" alt="Spool of thread">
-                <h3>Sewing</h3>
-            </div>
-            <div>
-                <img src="images/hobbies/cooking.svg" alt="Spatula">
-                <h3>Cooking</h3>
-            </div>
-            <div>
-                <img src="images/hobbies/video_games.svg" alt="Video game controller">
-                <h3>Video Games</h3>
+        <section id="hobbies" aria-label="Avrey's Hobbies">
+            <div class="container">
+                <h2 class="text-center">My Hobbies</h2>
+                <div class="row justify-content-evenly">
+                    <div class="col-4 col-md-2 text-center">
+                        <img src="images/hobbies/run.svg" alt="Running shoe">
+                        <p>Running</p>
+                    </div>
+                    <div class="col-4 col-md-2 text-center">
+                        <img src="images/hobbies/camping.svg" alt="Camping tent">
+                        <p>Camping</p>
+                    </div>
+                    <div class="col-4 col-md-2 text-center">
+                        <img src="images/hobbies/sewing.svg" alt="Spool of thread">
+                        <p>Sewing</p>
+                    </div>
+                    <div class="col-4 col-md-2 text-center">
+                        <img src="images/hobbies/cooking.svg" alt="Spatula">
+                        <p>Cooking</p>
+                    </div>
+                    <div class="col-4 col-md-2 text-center">
+                        <img src="images/hobbies/video_games.svg" alt="Video game controller">
+                        <p>Video Games</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="resume">
+        <hr id="resumeLine">
+
+        <section id="resume" aria-label="Avrey's Resume">
             <a href="../project_files/avrey_semadeni_resume.docx" download>Download Resume</a>
+            <div id="resumeShadow"></div>
         </section>
     </main>
 
+    <footer>
+        <div class="container">
+            <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-3 text-center">
+                <img src="images/as_logo_white.svg" alt="Avrey Semadeni Logo" class="d-inline-block">
+                <p class="chakra d-inline-block fw-bold fs-4 ms-3 mb-0">Avrey Semadeni</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 text-center mb-3">
+                <a href="https://www.facebook.com/avrey.low" target="_blank"><i class="bi bi-instagram me-3"></i></a>
+                <a href="https://www.instagram.com/20alow64" target="_blank"><i class="bi bi-facebook ms-3"></i></a>
+            </div>
+            <div class="col-12 col-lg-4 mb-2 text-center">
+                <p>Computer mockup image <br class="d-md-none d-lg-block"><a href="http://www.freepik.com" target="_blank">designed by starline / Freepik</a><br class="d-md-none d-lg-block"> with modifications by me</p>
+            </div>
+            <div class="col-12 text-center">
+                <p id="copyright">&copy; Avrey Semadeni 2024</p>
+            </div>
+            </div>
+        </div>
+    </footer>
 
+
+    <script type="module" src="./javascripts/main.js"></script>
 </body>
 </html>
