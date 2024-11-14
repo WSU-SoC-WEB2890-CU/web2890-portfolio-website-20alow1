@@ -452,7 +452,7 @@ footer {
     position: relative;
     margin: 0 auto;
     z-index: -1;
-    bottom: 3.55rem;
+    bottom: 3.56rem;
     right: .1px;
 }
 
@@ -573,15 +573,14 @@ section[aria-labelledby="projectDesign"] {
 }
 
 #colorPalette {
-    margin-bottom: 8rem;
+    margin-bottom: 7rem;
 }
 
 #projectLeft, #projectRight {
     width: 10%;
     position: absolute;
     padding: 1rem 0;
-    top: 4rem;
-    
+    top: 3.5rem;
     img {
         width: 100%;
         padding: 1rem 0;
@@ -603,6 +602,33 @@ section[aria-labelledby="projectDesign"] {
 #projectRight {
     right: 0;
 }
+
+#carsAtNightPhoto {
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+
+
+
+
+
+
+
+
+// CONTACT
+#contactPage {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    background-image: url(/images/glitter_bg.jpg);
+    color: white;
+}
+
+
+
+
+
+
 
 
 
