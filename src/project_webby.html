@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="utf-8">
-    <title>About | Avrey Semadeni</title>
+    <title>Webby Project | Avrey Semadeni</title>
     <link rel="icon" type="image/x-icon" href="images/logo_32.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow">
     <meta name="description" content="Avrey Semadeni Portfolio">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./stylesheets/main.scss">
-    </head>
+</head>
 <body>
     <nav class="navbar navbar-light navbar-expand-lg">
         <div class="container-fluid">
@@ -34,7 +35,7 @@
                 <a class="nav-link" href="projects.html">Projects</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
+                <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item me-lg-4" id="contactButtonParent">
                 <a class="nav-link" id="contactButton" href="contact.html">Contact</a>
@@ -44,59 +45,40 @@
         </div>
     </nav>
 
-
-    <!-- Should I add my skills and process here instead of homepage? Or should I add them to both? -->
     <main>
-        <section id="aboutMe" aria-labelledby="aboutTitle">
+        <section aria-labelledby="projectSummary">
             <div class="container">
-                <h1 id="aboutTitle">About Me</h1>
-
-                <div id="aboutParagraph">
-                    <img src="images/avrey2_hex.png" alt="Avrey Semadeni, a female website developer with straight brown hair" id="avrey">
-
-                    <p class="md-short-p">I am a student studying Full Stack Web Development at Weber State University. However, I wasn't always interested in web design. As I took steps to enter college, I changed my major a couple times but wasn't happy with it.</p>
-                    <p>I remembered taking a Web Development class in high school that I found enjoyable, as I was able to manipulate a website's elements through code and use my keen attention to detail to spot any syntax errors. I also liked the variety of possibilites for elements that could form a website.</p>
-                    <p>I promptly changed my major to Web Development and have been enjoying using both my creative and logical sides to create wonderful websites!</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="hobbies" aria-label="Avrey's Hobbies">
-            <div class="container">
-                <h2 class="text-center">My Hobbies</h2>
-                <div class="row justify-content-evenly">
-                    <div class="col-4 col-md-2 text-center">
-                        <img src="images/hobbies/run.svg" alt="Running shoe">
-                        <p>Running</p>
+                <div class="row gx-5 gy-3">
+                    <div id="projectLeft">
+                        <a href="project_cardeal.html"><img src="images/left_arrow.svg" alt="Previous project button"></a>
                     </div>
-                    <div class="col-4 col-md-2 text-center">
-                        <img src="images/hobbies/camping.svg" alt="Camping tent">
-                        <p>Camping</p>
+                    <div id="projectRight">
+                        <a href="project_2620.html"><img src="images/right_arrow.svg" alt="Next project button"></a>
                     </div>
-                    <div class="col-4 col-md-2 text-center">
-                        <img src="images/hobbies/sewing.svg" alt="Spool of thread">
-                        <p>Sewing</p>
+                    <!-- Put in the arrows to navigate to next project -->
+                    <div class="col-12 col-md-6">
+                        <img src="images/projects/cardeal_mockup.png" alt="CarDeal's home page">
                     </div>
-                    <div class="col-4 col-md-2 text-center">
-                        <img src="images/hobbies/cooking.svg" alt="Spatula">
-                        <p>Cooking</p>
-                    </div>
-                    <div class="col-4 col-md-2 text-center">
-                        <img src="images/hobbies/video_games.svg" alt="Video game controller">
-                        <p>Video Games</p>
+                    <div class="col-12 col-md-6 pt-md-3">
+                        <h1 id="projectSummary">Cardeal</h1>
+                        <p><span class="fw-bold">Role:</span> Designer & Developer</p>
+                        <p><span class="fw-bold">Time to Complete:</span> 2 weeks</p>
+                        <p><span class="fw-bold">Sources:</span> Illustrations from Flaticon, made by <a href="https://www.flaticon.com/authors/smashicons" target="_blank" class="fw-bold">Smashicons</a></p>
+                        <a href="https://cardeal-avrey.netlify.app/" target="_blank"><span class="fw-bold">Full Website</span> &#40;opens in new tab&#41;</a>
                     </div>
                 </div>
             </div>
         </section>
-
-        <hr id="resumeLine">
-
-        <section id="resume" aria-label="Avrey's Resume">
-            <a href="../project_files/avrey_semadeni_resume.docx" download>Download Resume</a>
-            <div id="resumeShadow"></div>
+        <section aria-labelledby="projectDescription">
+            <div class="container">
+                <h1 id="projectDescription">Description</h1>
+                <p>CarDeal is a made-up company that offers to buy your car for cash, with the option to do a trade-in to purchase a vehicle CarDeal owns. One of the main goals was to design a website that is more customized and stands out from other competitor websites, while still providing customers with the information they need.</p>
+                <p>I was given specific instructions for what content to include in each section, but I chose the colors, fonts, and layout to implement. I also designed a favicon for the website so it has more presence in browser tabs. The site is a one-page website that is responsive and displays pleasing looks on desktop, tablet, and mobile phone screens.</p>
+                <p>I believe one of the strongest features of this web project is the header/hero section. It is extremely important to have the first thing users see be visually pleasing and quickly summarize what the website is about, and the design I have creates a good first impression while making it clear that this website buys cars.</p>
+            </div>
         </section>
     </main>
-
+  
     <footer>
         <div class="container">
             <div class="row">
@@ -117,7 +99,6 @@
             </div>
         </div>
     </footer>
-
 
     <script type="module" src="./javascripts/main.js"></script>
 </body>
