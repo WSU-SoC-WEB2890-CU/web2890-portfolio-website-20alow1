@@ -1,6 +1,7 @@
 // See if I can add blur behind navbar
 // Look at focus styling on buttons with clip path
 // Move navigation on desktop to the right side, and add my name by the logo
+// Figure out if I can style the default form error tooltip
 
 
 // My Colors
@@ -605,7 +606,7 @@ section[aria-labelledby="projectDesign"] {
 
 #carsAtNightPhoto {
     border-radius: 10px;
-    margin: 1rem;
+    margin: 1.4rem;
 }
 
 
@@ -619,20 +620,65 @@ section[aria-labelledby="projectDesign"] {
 // CONTACT
 #contactPage {
     padding-top: 8rem;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
     background-image: url(/images/glitter_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
+    font-weight: 600;
+    line-height: 2.5rem;
+    input[type="text"], textarea {
+        background-color: $pastelbluelighter;
+        border: none;
+        border-radius: 7px;
+        padding: .5rem 1rem;
+        width: 100%;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        &::placeholder {
+            color: #283B69;
+            font-size: 1.2rem;
+        }
+        &:focus {
+            border: 5px solid rgba($color: $pastelblueblue, $alpha: .7);
+            outline: 2px solid white;
+        }
+    }
+    input[type="submit"] {
+        background-color: $salmon;
+        border: none;
+        clip-path: polygon(5% 0%, 95% 0%, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0% 85%, 0% 15%);
+        padding: .7rem 2rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: all .2s ease-out;
+        // margin: auto;
+        // display: block;
+        &:hover {
+            background-color: $salmonlighter;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 100%, 0% 0%);
+            border-radius: 5px;
+        }
+    }
+    textarea {
+        height: 200px;
+    }
 }
 
 
-
-
-
-
-
-
-
-
+// Fix white space at bottom of screen on short pages
+.shortFix {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    footer {
+        justify-self: flex-end;
+    }
+    #contactPage {
+        height: 100%;
+        flex-grow: 1;
+    }
+}
 
 
 

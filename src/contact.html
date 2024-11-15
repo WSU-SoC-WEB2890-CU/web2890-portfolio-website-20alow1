@@ -15,7 +15,7 @@
 </head>
 
 
-<body>
+<body class="shortFix">
     <nav class="navbar navbar-light navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand ms-2" href="index.html">
@@ -48,9 +48,9 @@
 
     <main id="contactPage">
         <div class="container">
-            <h1>Get in Touch</h1>
+            <h1 class="mb-4">Get in Touch</h1>
             <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 mb-5">
                     <p>Have questions?</p>
                     <p>Want to get a quote for your project?</p>
                     <p>Feel free to message me for any of your needs!</p>
@@ -58,14 +58,14 @@
 
                 <div class="col-12 col-lg-6">
                     <form action="">
-                        <label for="formName">Name*</label>
-                        <input type="text" placeholder="Name" id="formName" name="name">
+                        <label for="formName" class="visually-hidden">Name*</label>
+                        <input type="text" placeholder="Name" id="formName" name="name" required>
 
-                        <label for="formEmail">Email*</label>
-                        <input type="text" placeholder="Email" id="formEmail" name="email">
+                        <label for="formEmail" class="visually-hidden">Email*</label>
+                        <input type="text" placeholder="Email" id="formEmail" name="email" required>
 
-                        <label for="formMessage">Message*</label>
-                        <textarea name="message" id="formMessage" placeholder="Type your message here"></textarea>
+                        <label for="formMessage" class="visually-hidden">Message*</label>
+                        <textarea name="message" id="formMessage" placeholder="Type your message here" required></textarea>
 
                         <input type="submit" value="Send Message">
                     </form>
