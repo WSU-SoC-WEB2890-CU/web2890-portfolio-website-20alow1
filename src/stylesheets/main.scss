@@ -151,7 +151,7 @@ nav {
         font-size: 1.6rem;
         margin-bottom: 2rem;
     }
-    a {
+    #introButton {
         text-decoration: none;
         color: black;
         background-color: $salmon;
@@ -173,7 +173,14 @@ nav {
 }
 
 #heroEmphasis {
-    color: $salmon;
+    color: $salmonlight;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-decoration: underline;
+    &:hover {
+        color: $salmonlighter;
+        text-decoration: underline dotted;
+    }
 }
 
 #heroButton {
@@ -208,23 +215,23 @@ nav {
 }
 
 #html {
-    width: 85%;
-    background-color: $pastelblueblue;
-}
-
-#css {
-    width: 70%;
-    background-color: $pastelblue;
-}
-
-#javascript {
-    width: 35%;
+    width: 90%;
     background-color: $pastelbluelight;
 }
 
-#uxdesign {
-    width: 50%;
+#css {
+    width: 85%;
+    background-color: $pastelbluelight;
+}
+
+#javascript {
+    width: 40%;
     background-color: $pastelblueblue;
+}
+
+#uxdesign {
+    width: 60%;
+    background-color: $pastelblue;
 }
 
 #photoshop {
@@ -232,10 +239,10 @@ nav {
     background-color: $pastelblue;
 }
 
-#illustrator {
-    width: 35%;
-    background-color: $pastelbluelight;
-}
+// #illustrator {
+//     width: 35%;
+//     background-color: $pastelbluelight;
+// }
 
 
 
@@ -369,7 +376,13 @@ footer {
     font-size: 1.5rem;
 }
 
-
+.footerLogoLink {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        opacity: .7;
+    }
+}
 
 
 
@@ -596,10 +609,10 @@ section[aria-labelledby="projectDesign"] {
 
         &:hover {
             border-radius: 10px;
-            border: 2px outset $pastelblueblue;
-            background-color: rgba($color: $pastelblueblue, $alpha: .1);
-            // border: 2px outset $salmon;
-            // background-color: rgba($color: $salmon, $alpha: .1);
+            // border: 2px outset $pastelblueblue;
+            // background-color: rgba($color: $pastelblueblue, $alpha: .1);
+            border: 2px outset $salmon;
+            background-color: rgba($color: $salmon, $alpha: .1);
         }
     }
 }
