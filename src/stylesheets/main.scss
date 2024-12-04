@@ -1,7 +1,7 @@
 // Things to try:
 
 // See if I can add blur behind navbar
-// Look at focus styling on buttons with clip path
+// Look at focus styling on buttons with clip path. Better way?
 // Move navigation on desktop to the right side, and add my name by the logo?
 // Figure out if I can style the default form error tooltip. And just tooltip.
 
@@ -123,6 +123,12 @@ nav {
     }
 }
 
+.activePage {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+
 
 
 
@@ -164,6 +170,10 @@ nav {
             background-color: $salmonlighter;
             clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 100%, 0% 0%);
             border-radius: 5px;
+        }
+
+        &:focus-visible {
+            border: 5px solid white;
         }
     }
     img {
@@ -275,6 +285,11 @@ nav {
 .featuredTitle {
     font-size: 2rem;
     font-weight: bold;
+}
+
+.featuredDescription {
+    font-weight: 600;
+    margin: 0 2rem;
 }
 
 
@@ -456,6 +471,9 @@ footer {
             border-radius: 5px;
             border: 2px solid black;
         }
+        &:focus-visible {
+            border: 5px solid $pastelblueblue;
+        }
     }
 }
 
@@ -506,59 +524,103 @@ section[aria-label="Projects Gallery"] {
 
 
 .projectCard {
-    a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        color: black;
-        font-weight: bold;
-        font-family: 'Chakra Petch', serif;
-        font-size: 2rem;
-        &:hover .projectHover {
-            visibility: visible;
-            width: inherit;
-            height: inherit;
-            scale: 1.05;
-            background-color: rgba($color: $pastelbluelighter, $alpha: .9);
-            text-align: center;
-            padding-top: 2rem;
-            border-radius: 7px;
-            left: 0;
-            bottom: 0;
-            transition: all 0.1s ease-out;
-        }
-        &:hover img {
-            scale: 1.05;
-            transition: all 0.1s ease-out;
-        }
-    }
+    border-radius: 7px;
+    scale: 1;
+    box-shadow: 3px 3px 5px $darkblue;
+    height: 100%;
+    background-color: white;
     img {
         width: 100%;
-        height: 100%;
+        aspect-ratio: 16 / 9;
         object-fit: cover;
-        border-radius: 7px;
-        border: 1px inset $pastelbluelighter;
-        scale: 1;
-        position: relative;
-        &:hover {
-            box-shadow: 1px 1px 5px $darkblue;
-            cursor: pointer;
-            scale: 1.05;
-            transition: all 0.1s ease-out;
+        border-radius: 7px 7px 0 0;
+        border: 1px solid $pastelbluelighter;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        height: 100%;
+        display: inline-block;
+    }
+
+    .projectCardDescription {
+        border-radius: 0 0 7px 7px;
+        padding-bottom: 1rem;
+        h2 {
+            background-color: $salmonlight;
+            padding: 1rem 1.5rem;
         }
-        
+        p {
+            margin: 1rem 1.5rem;
+            height: 100%;
+        }
+    }
+
+    &:hover {
+        scale: 1.03;
+        transition: all 0.1s ease-out;
+        box-shadow: 5px 5px 5px $darkblue;
     }
 }
 
-.projectHover {
-    position: absolute;
-    visibility: hidden;
-    scale: 1;
-    transition: visibility 0s;
-}
 
 
+
+// First card design
+
+// .projectCard {
+//     a {
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//         position: relative;
+//         color: black;
+//         font-weight: bold;
+//         font-family: 'Chakra Petch', serif;
+//         font-size: 2rem;
+//         &:hover .projectHover {
+//             visibility: visible;
+//             width: inherit;
+//             height: inherit;
+//             scale: 1.05;
+//             background-color: rgba($color: $pastelbluelighter, $alpha: .9);
+//             text-align: center;
+//             padding-top: 2rem;
+//             border-radius: 7px;
+//             left: 0;
+//             bottom: 0;
+//             transition: all 0.1s ease-out;
+//         }
+//         &:hover img {
+//             scale: 1.05;
+//             transition: all 0.1s ease-out;
+//         }
+//     }
+//     img {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//         border-radius: 7px;
+//         border: 1px inset $pastelbluelighter;
+//         scale: 1;
+//         position: relative;
+//         &:hover {
+//             box-shadow: 1px 1px 5px $darkblue;
+//             cursor: pointer;
+//             scale: 1.05;
+//             transition: all 0.1s ease-out;
+//         }
+        
+//     }
+// }
+
+// .projectHover {
+//     position: absolute;
+//     visibility: hidden;
+//     scale: 1;
+//     transition: visibility 0s;
+// }
 
 
 
@@ -679,6 +741,9 @@ section[aria-labelledby="projectDesign"] {
             background-color: $salmonlighter;
             clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 100%, 0% 0%);
             border-radius: 5px;
+        }
+        &:focus-visible {
+            border: 5px solid white;
         }
     }
     textarea {
@@ -861,6 +926,10 @@ section[aria-labelledby="projectDesign"] {
             clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 100%, 0% 0%);
             border-radius: 5px;
             text-decoration: none;
+        }
+
+        &:focus-visible {
+            border: 5px solid white;
         }
     }
 
