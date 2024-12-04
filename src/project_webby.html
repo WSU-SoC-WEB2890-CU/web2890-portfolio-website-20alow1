@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <title>Webby Project | Avrey Semadeni</title>
+    <link rel="icon" type="image/x-icon" href="images/logo_32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Avrey Semadeni Portfolio">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/main.scss">
+</head>
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-2" href="index.html">
+            <img src="images/as_logo_dark.svg" alt="Avrey Semadeni Logo" width="60" height="60" class="d-inline-block align-text-center">
+            <span class="chakra d-none d-sm-inline d-lg-none fw-bold">Avrey Semadeni</span>
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#asNavbar" aria-controls="asNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse ms-2 ms-lg-0" id="asNavbar">
+            <ul class="navbar-nav mb-2 mb-lg-0 w-100 text-center">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item me-lg-4" id="contactButtonParent">
+                <a class="nav-link" id="contactButton" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section aria-labelledby="projectSummary">
+            <div class="container">
+                <div class="row gx-5 gy-3">
+                    <div id="projectLeft">
+                        <a href="project_cardeal.html"><img src="images/left_arrow.svg" alt="Previous project button"></a>
+                    </div>
+                    <div id="projectRight">
+                        <a href="project_2620.html"><img src="images/right_arrow.svg" alt="Next project button"></a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="images/projects/webby_mockup.png" alt="Webby's home page">
+                    </div>
+                    <div class="col-12 col-md-6 pt-md-3">
+                        <h1 id="projectSummary">Webby</h1>
+                        <p><span class="fw-bold">Role:</span> Customizer</p>
+                        <p><span class="fw-bold me-1">Technologies:</span> HTML, CSS/Sass, Bootstrap</p>
+                        <p><span class="fw-bold">Time to Complete:</span> 2 weeks</p>
+                        <p><span class="fw-bold">Sources:</span> Code adapted from this <a href="https://www.youtube.com/playlist?list=PLb6bnKCHlCwmlv01_eHzVfQHhThBAXgW5" target="_blank" class="fw-bold">YouTube Course</a></p>
+                        <a href="https://webby-avrey.netlify.app/" target="_blank"><span class="fw-bold">Full Website</span> &#40;opens in new tab&#41;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="projectDescription">
+            <div class="container">
+                <h1 id="projectDescription">Description</h1>
+                <p>Webby is a pretend website for a web designer. The main goal of this project was to take a website template and make it more my own by using SASS to customize Bootstrap's default styles.</p>
+                <p>The one-page starter project was created from a YouTube tutorial, then I chose custom colors, images, graphics, icons, designed a logo, added real text, and added a couple new sections to the website to make it more complete. The site is responsive, and displays correctly on all screen widths, from mobile to desktop.</p>
+                <p>One of the struggles I experienced with this project was overriding the default styles created by Bootstrap. After some manipulating of code and experimenting, I was able to overcome this and create a system that allowed me to easily customize the website.</p>
+            </div>
+        </section>
+    </main>
+  
+    <footer>
+        <div class="container">
+            <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-3 text-center">
+                <a href="index.html" class="footerLogoLink">
+                    <img src="images/as_logo_white.svg" alt="Avrey Semadeni Logo" class="d-inline-block">
+                    <p class="chakra d-inline-block fw-bold fs-4 ms-3 mb-0">Avrey Semadeni</p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 text-center mb-3">
+                <a href="https://www.instagram.com/20alow64" target="_blank"><i class="bi bi-instagram me-3"></i></a>
+                <a href="https://www.facebook.com/avrey.low" target="_blank"><i class="bi bi-facebook ms-3"></i></a>
+            </div>
+            <div class="col-12 col-lg-4 mb-2 text-center">
+                <p>Computer mockup image <br class="d-md-none d-lg-block"><a href="http://www.freepik.com" target="_blank">designed by starline / Freepik</a><br class="d-md-none d-lg-block"> with modifications by me</p>
+            </div>
+            <div class="col-12 text-center">
+                <p id="copyright">&copy; Avrey Semadeni 2024</p>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./javascripts/main.js"></script>
+</body>
+</html>

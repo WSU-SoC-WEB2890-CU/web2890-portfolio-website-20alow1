@@ -3,26 +3,203 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Portfolio website</title>
+  <title>Avrey Semadeni</title>
+  <link rel="icon" type="image/x-icon" href="images/logo_32.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
-  <meta name="description" content="TODO: Portfolio website ...">
+  <meta name="description" content="Avrey Semadeni Portfolio">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./stylesheets/main.scss">
 </head>
 
 <body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Portfolio Website
-  </h1>
+  <header id="homeLanding">
+    <nav class="navbar navbar-light navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-2" href="#">
+          <img src="images/as_logo_dark.svg" alt="Avrey Semadeni Logo" width="60" height="60" class="d-inline-block align-text-center">
+          <span class="chakra d-none d-sm-inline d-lg-none fw-bold">Avrey Semadeni</span>
+        </a>
 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#asNavbar" aria-controls="asNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ms-2 ms-lg-0" id="asNavbar">
+          <ul class="navbar-nav mb-2 mb-lg-0 w-100 text-center">
+            <li class="nav-item">
+              <a class="nav-link active activePage" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item me-lg-4" id="contactButtonParent">
+              <a class="nav-link" id="contactButton" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="heroSection" class="container">
+      <div class="row align-items-center h-100">
+        <div class="col">
+          <p id="hello" class="chakra">Hello</p>
+            <!-- Hello opens up first with other paragraph shortly after. Hello different font happy -->
+          <p class="p-2 introduction">My name is <a id="heroEmphasis" href="about.html">Avrey Semadeni</a> and I design <b>professional websites</b> that align with your goals.</p>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-6 col-lg-4 order-md-1">
+              <img src="images/avrey.jpg" alt="Avrey Semadeni the Web Designer">
+            </div>
+            <div class="col-12 col-md-5 col-lg-4" id="heroButton">
+              <a href="projects.html" class="chakra" id="introButton">See My Work</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="mySkills" class="container-fluid" aria-labelledby="skillsSect">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-4 order-lg-1 text-center">
+          <h1 id="skillsSect">My Skills</h1>
+        </div>
+        <div class="col-12 col-lg-8 p-0" id="skillsGraph">
+          <div class="skillsBar" id="html">
+            <p>HTML - 90%</p>
+          </div>
+          <div class="skillsBar" id="css">
+            <p>CSS - 85%</p>
+          </div>
+          <div class="skillsBar" id="photoshop">
+            <p>Photoshop - 80%</p>
+          </div>
+          <div class="skillsBar" id="uxdesign">
+            <p>UX Design - 60%</p>
+          </div>
+          <div class="skillsBar" id="javascript">
+            <p>JavaScript - 40%</p>
+          </div>
+          <!-- <div class="skillsBar" id="illustrator">
+            <p>Illustrator (35%)</p>
+          </div> -->
+        </div>
+        <!-- <div class="col-12 col-lg-8 p-0" id="skillsGraph">
+          <div class="skillsBar" id="html">
+            <p>HTML</p>
+          </div>
+          <div class="skillsBar" id="css">
+            <p>CSS</p>
+          </div>
+          <div class="skillsBar" id="javascript">
+            <p>JavaScript</p>
+          </div>
+          <div class="skillsBar" id="uxdesign">
+            <p>UX Design</p>
+          </div>
+          <div class="skillsBar" id="photoshop">
+            <p>Photoshop</p>
+          </div>
+          <div class="skillsBar" id="illustrator">
+            <p>Illustrator</p>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="featuredProjects" aria-labelledby="featuredSect">
+      <div class="container">
+        <h1 id="featuredSect" class="text-center">Featured Projects</h1>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 mb-5 mb-md-0 text-center">
+            <a href="project_cardeal.html"><img src="images/projects/cardeal_mockup.png" alt="Mockup of Cardeal website"><p class="featuredTitle">Cardeal</p></a><p class="featuredDescription">A high-end project for a pretend company that buys your car for cash. I designed this website from scratch, with Bootstrap as a framework.</p>
+          
+          </div>
+          <div class="col-12 col-md-6 text-center">
+            <a href="project_webby.html"><img src="images/projects/webby_mockup.png" alt="Mockup of Webby website"><p class="featuredTitle">Webby</p></a><p class="featuredDescription">A made-up website for a portfolio website. It was customized from a website template.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="contain">
+        <img src="images/webby_mockup.png" alt="" id="mockup" width="300px">
+        <a id="overlay" href="https://cardeal-avrey.netlify.app/"><p><b>Webby</b><br><br>Click for full description</p></a>
+      </div> --> 
+    </section>
+
+    <section id="myProcess" aria-labelledby="processSect">
+      <div class="container">
+        <h1 id="processSect" class="text-center">My Process</h1>
+        <div class="row justify-content-evenly">
+          <div class="processBox processXLBox col-12 col-md-5 col-xl-2">
+            <h2>Vision</h2>
+            <p>You tell me what goals you have for your website. What are your biggest needs? What mood should the website give?</p>
+            <div class="processShadow"><span class="chakra">01</span></div>
+          </div>
+          <div class="processBox col-12 col-md-5 col-xl-3">
+            <h2>Research</h2>
+            <p>I will analyze your competitors' websites to improve your website's experience.</p>
+            <div class="processShadow"><span class="chakra">02</span></div>
+          </div>
+          <div class="processBox col-12 col-md-5 col-xl-3">
+            <h2>Design</h2>
+            <p>I will design a couple different website looks, and you choose which one you like.</p>
+            <div class="processShadow col-12 col-md-6 col-lg-3"><span class="chakra">03</span></div>
+          </div>
+          <div class="processBox processXLBox col-12 col-md-5 col-xl-2">
+            <h2>Code</h2>
+            <p>I will code your chosen design so we can get your website up and running!</p>
+            <div class="processShadow"><span class="chakra">04</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-3 text-center">
+          <a href="index.html" class="footerLogoLink">
+            <img src="images/as_logo_white.svg" alt="Avrey Semadeni Logo" class="d-inline-block">
+            <p class="chakra d-inline-block fw-bold fs-4 ms-3 mb-0">Avrey Semadeni</p>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 text-center mb-3">
+          <a href="https://www.instagram.com/20alow64" target="_blank"><i class="bi bi-instagram me-3"></i></a>
+          <a href="https://www.facebook.com/avrey.low" target="_blank"><i class="bi bi-facebook ms-3"></i></a>
+        </div>
+        <div class="col-12 col-lg-4 mb-2 text-center">
+          <p>Computer mockup image <br class="d-md-none d-lg-block"><a href="http://www.freepik.com" target="_blank">designed by starline / Freepik</a><br class="d-md-none d-lg-block"> with modifications by me</p>
+        </div>
+        <div class="col-12 text-center">
+          <p id="copyright">&copy; Avrey Semadeni 2024</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+
+<!-- Resources -->
+  <!-- https://www.svgrepo.com/svg/279828/kitchen-pack-cook -->
+   <!-- https://www.svgrepo.com/svg/269300/spool-of-thread-sew -->
+    <!-- https://www.svgrepo.com/svg/277595/run -->
+     <!-- https://www.svgrepo.com/svg/484976/camping-tent -->
+      <!-- https://www.svgrepo.com/svg/167729/game-controller -->
+
+      <!-- https://www.svgrepo.com/svg/277445/envelope-mail -->
+       <!-- https://www.svgrepo.com/svg/227996/email-mail -->
+
+
+       
   <script type="module" src="./javascripts/main.js"></script>
 </body>
 </html>
